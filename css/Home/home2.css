@@ -15,40 +15,95 @@ body {
   background-color: black;
   overflow: hidden;
   color: white;
+  /*.background {
+      z-index: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      background-color: black;
+
+      &::after {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          -webkit-backdrop-filter: blur(150px);
+          backdrop-filter: blur(150px);
+          z-index: 0;
+
+      }
+
+      .blur {
+          width: 150vw;
+          height: 130vh;
+          position: absolute;
+          border-radius: 50%;
+          z-index: 0;
+
+          &:nth-child(1) {
+              background-color: #001EE3;
+              top: 35%;
+              left: 50%;
+
+          }
+
+          &:nth-child(2) {
+              background-color: #F4501E;
+              bottom: 30%;
+              right: 50%;
+          }
+      }
+
+  }*/
 }
-body .background {
-  width: 100vw;
-  height: 100vh;
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  border: red solid;
+  position: relative;
+}
+header .btn {
+  font-size: 7rem;
+  text-decoration: none;
+  color: white;
+  font-family: "hagrid";
+  cursor: pointer;
   position: absolute;
+  left: 1rem;
   top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: black;
+  transition: transform 2s;
 }
-body .background::after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  -webkit-backdrop-filter: blur(150px);
-  backdrop-filter: blur(150px);
+header nav {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 50vh;
+  padding-left: 1rem;
+  gap: 2rem;
+  align-items: flex-start;
+  translate: -100%;
 }
-body .background .blur {
-  width: 150vw;
-  height: 130vh;
-  position: absolute;
-  border-radius: 50%;
+header nav img {
+  display: none;
 }
-body .background .blur:nth-child(1) {
-  background-color: #001EE3;
-  top: 35%;
-  left: 50%;
+header nav div {
+  display: flex;
+  flex-direction: column;
+  font-family: "parabole";
 }
-body .background .blur:nth-child(2) {
-  background-color: #F4501E;
-  bottom: 30%;
-  right: 50%;
+header nav div:nth-child(2) {
+  transform: translateX(2rem);
+  transition: transform 1500ms;
 }
 
 /*# sourceMappingURL=home2.css.map */
