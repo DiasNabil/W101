@@ -15,18 +15,6 @@
 	src: url(Hagrid-Thin-trial.ttf);
 }
 
-/* ANIMATION */
-
-@keyframes rotation {
-	0% {
-		transform: rotate(0);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
 
 /* media screen*/
 .background {z-index: 1;}
@@ -95,14 +83,13 @@ background-color: black;
 	background-color: #001EE3;
 	top: 35%;
 	left: 50%;
-	animation: rotation 15s linear 0s infinite reverse none;
+
 }
 
 .blur:nth-child(2) {
 	background-color: #F4501E;
 	bottom: 30%;
 	right: 50%;
-	animation: rotation 15s linear 0s infinite reverse none;
 }
 
 

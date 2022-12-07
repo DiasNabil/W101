@@ -1,0 +1,67 @@
+/*font face*/
+@font-face /*parabole*/
+{
+	font-family: 'parabole';
+	src: url(Parabole.ttf);
+}
+@font-face /*hagrid regular*/
+{
+	font-family: 'hagrid';
+	src: url(Hagrid-Regular-trial.ttf);
+}
+@font-face /*hagrid thin*/
+{
+	font-family: 'hagridthin';
+	src: url(Hagrid-Thin-trial.ttf);
+}
+
+body {
+	background-color: black;
+	overflow: hidden;
+	color: white;
+
+    .background {
+
+        width: 100vw;
+        height: 100vh;
+        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        background-color: black;
+        
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            -webkit-backdrop-filter: blur(150px);
+            backdrop-filter: blur(150px);
+            
+        }
+
+        .blur {
+            width: 150vw;
+            height: 130vh;
+            position: absolute;
+            border-radius: 50%;
+            
+            &:nth-child(1) {
+                background-color: #001EE3;
+                top: 35%;
+                left: 50%;
+            
+            }
+            
+            &:nth-child(2) {
+                background-color: #F4501E;
+                bottom: 30%;
+                right: 50%;
+            }
+        }
+        
+    }
+}

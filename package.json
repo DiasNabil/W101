@@ -1,0 +1,28 @@
+{
+  "name": "w101",
+  "version": "1.0.0",
+  "description": "https://diasnabil.github.io/W101/index.html",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiasNabil/W101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiasNabil/W101/issues"
+  },
+  "homepage": "https://github.com/DiasNabil/W101#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1"
+  },
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
